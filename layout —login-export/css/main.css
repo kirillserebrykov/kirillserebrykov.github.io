@@ -228,7 +228,7 @@ form .link {
 }
 @media screen and (max-width: 600px) {
   body{
-    zoom:  50%;}
+    zoom:  40%;}
   .header .nav nav {
     font-size: 20px;
     
