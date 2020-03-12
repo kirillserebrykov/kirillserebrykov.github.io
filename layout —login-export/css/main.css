@@ -216,7 +216,7 @@ form .link {
 @media screen and (max-width: 1200px) {
   .video {
     position: relative;
-    top: 150px;
+    top: 200px;
     left: -10px;
     width: 100px;
     height: 100px;
