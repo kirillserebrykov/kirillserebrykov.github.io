@@ -1,0 +1,307 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  font-family: "Open Sans";
+}
+
+.wrapper {
+  padding: 30px;
+}
+
+.backgraund {
+  background-color: #f6f2f2;
+  min-width: 900px;
+}
+
+.header {
+  height: 89px;
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.nav a:active {
+  /* Style for "Rectangle" */
+  width: 90px;
+  height: 89px;
+  background-color: #ff3f40;
+  display: inline-flex;
+  position: relative;
+  top: -30px;
+  padding-top: 30px;
+}
+
+.nav a:active {
+  /* Style for "Rectangle" */
+  text-align: center;
+  display: block;
+}
+
+nav {
+  /* Style for "Rectangle" */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  position: relative;
+  top: 30px;
+  left: 10px;
+  /* Style for "home" */
+  color: #e0e0e0;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  /* Text style for "h, ome" */
+  letter-spacing: 0.49px;
+}
+
+.nav__home {
+  margin-right: 64px;
+}
+
+.nav__portfolio {
+  margin-right: 64px;
+}
+
+.nav__aboutUs {
+  margin-right: 64px;
+}
+
+.nav__contacts {
+  margin-right: 64px;
+}
+
+h1 {
+  /* Style for "our strong" */
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72px;
+  text-transform: uppercase;
+  /* Text style for "o, ur stro" */
+  letter-spacing: 1.5px;
+  /* Text style for "organaisat" */
+  letter-spacing: 6px;
+  font-weight: 700;
+  margin-top: 108px;
+  margin-bottom: 36px;
+}
+
+.contact p {
+  /* Style for "Lorem ipsu" */
+  /* Style for "Lorem ipsu" */
+  opacity: 0.7;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.contact {
+  max-width: 589px;
+  min-height: 339px;
+}
+
+button {
+  /* Style for "Rectangle" */
+  width: 227px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #ff2d2d;
+  margin-top: 58px;
+}
+
+form .link {
+  /* Style for "Contact Us" */
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34.06px;
+  /* Text style for "C, ontact" */
+  letter-spacing: 0.32px;
+}
+
+.video {
+  position: relative;
+  top: 100px;
+  left: 700px;
+  width: 100px;
+  height: 100px;
+  top: -390px;
+}
+
+@media screen and (max-width: 1200px) {
+  .video {
+    position: relative;
+    top: 100px;
+    left: -10px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .opportunities {
+    margin-top: 315px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header .nav nav {
+    font-size: 20px;
+  }
+
+  .header .nav {
+    width: 90%;
+  }
+
+  .contact h1 {
+    font-size: 30px;
+  }
+
+  .maps {
+    display: flex;
+  }
+
+  .opportunities {
+    margin-top: 315px;
+  }
+
+  .opportunities h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header .nav nav {
+    font-size: 15px;
+    width: 750px;
+  }
+
+  .header {
+    width: 750px;
+  }
+}
+h2 {
+  /* Style for "do you kno" */
+  width: 500px;
+  height: 87px;
+  opacity: 0.8;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+  text-transform: uppercase;
+  /* Text style for "do you kno" */
+  letter-spacing: 0.42px;
+  margin-bottom: 50px;
+}
+
+.opportunities p {
+  /* Style for "Lorem ipsu" */
+  width: 509px;
+  height: 98px;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.maps {
+  position: relative;
+  left: 700px;
+}
+
+.opportunities {
+  padding: 30px;
+}
+.opportunities p {
+  white-space: nowrap;
+  /* Style for "Lorem ipsu" */
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
