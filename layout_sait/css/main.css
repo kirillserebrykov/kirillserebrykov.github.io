@@ -432,4 +432,7 @@ form .More {
     position: relative;
     left: 60px;
   }
+  .pichers .heading .line{
+		margin-left: 40px;
+	}
 }
