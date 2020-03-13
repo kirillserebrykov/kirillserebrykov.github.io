@@ -427,12 +427,13 @@ form .More {
     top: -390px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) {
   .pichers.heading .line {
-    position: relative;
-    left: 60px;
+    position: absolute;
+    left: 70px;
   }
-  .pichers .heading .line{
-		margin-left: 40px;
-	}
+
+  .pichers .heading .line {
+    margin-left: 40px;
+  }
 }
