@@ -1,0 +1,2405 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+  overflow: hidden;
+}
+
+@font-face {
+    font-family: 'DiavloBold-Regular';
+    src: url('../fonts/DiavloBold-Regular.otf') format('opentype'),
+    url('../fonts/DiavloBold-Regular.woff') format('woff'), url('../fonts/DiavloBold-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+input, textarea, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.old,
+.new {
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.limit {
+    max-width: 1114px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.block1 .bg_cont {
+    background: url("../img/block1_bg.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 743px;
+
+}
+
+.block1 .top {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 15px 0;
+}
+
+.block1 .top .list li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    padding-left: 62px;
+    position: relative;
+    letter-spacing: -1px;
+    padding-right: 72px;
+}
+
+.block1 .top .list li:nth-of-type(2) {
+    padding-left: 37px;
+}
+
+.block1 .top .list li:nth-of-type(3) {
+    padding-left: 77px;
+}
+
+.block1 .top .list li:nth-of-type(1):before {
+    content: '';
+    background: url("../img/block1_icon.png");
+    width: 44px;
+    height: 23px;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.block1 .top .list li:nth-of-type(2):before {
+    content: '';
+    background: url("../img/block1_icon2.png");
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.block1 .top .list li:nth-of-type(3):before {
+    content: '';
+    background: url("../img/block1_icon3.png");
+    width: 72px;
+    height: 19px;
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.block1 .middle {
+    font-size: 0;
+}
+
+.block1 .middle .left,
+.block1 .middle .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.block1 .middle .left {
+    padding: 77px 180px 0 10px;
+}
+
+.block1 .middle .left h1 {
+    background: -webkit-linear-gradient(#dbbd90, #b6996c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'DiavloBold-Regular';
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: 16px;
+    position: relative;
+    right: 4px;
+}
+
+.block1 .middle .left h2 {
+    color: white;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.block1 .middle .left h2 span {
+    font-size: 27px;
+    display: block;
+}
+
+.block1 .middle .left h2 font {
+    color: #00dce6;
+}
+
+.block1 .middle .left .list {
+    margin: 50px auto 65px;
+}
+
+.block1 .middle .left .list li {
+    padding-left: 20px;
+    position: relative;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.block1 .middle .left .list li:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #e2c496;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 50%;
+
+}
+
+.block1 .middle {
+    position: relative;
+}
+
+.block1 .middle .left .sect {
+    max-width: 366px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #dcbf93;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.block1 .middle .left .sect span {
+    display: block;
+    color: #e2c496;
+}
+
+.block1 .middle .right {
+    padding: 40px 99px 0 187px;
+}
+
+.block1 .middle .right .symbol {
+    margin: 0 auto 5px;
+    display: block;
+
+}
+
+.block1 .middle .right h2 {
+    background: -webkit-linear-gradient(#dbbd90, #b6996c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.block1 .middle .right .sale {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.block1 .middle .right .sale span {
+    font-size: 32px;
+}
+
+.block1 .middle .right .price {
+    text-align: center;
+}
+
+.block1 .middle .right .price span {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.block1 .middle .right .price .old {
+    font-size: 27px;
+    color: #888888;
+    position: relative;
+}
+
+.block1 .middle .right .price .old:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: red;
+
+}
+
+.block1 .middle .right .price .new {
+    font-size: 34px;
+    color: white;
+}
+
+.block1 .middle .right form {
+    background: url("../img/form_bg.png") no-repeat;
+    width: 291px;
+    height: 319px;
+    background-size: contain;
+    padding: 35px 15px;
+    margin-top: 18px;
+    margin-bottom: 65px;
+    position: relative;
+
+}
+
+select {
+    background: #fff url("../img/arr.svg") no-repeat center right 15px;
+    -webkit-background-size: 15px;
+    background-size: 15px;
+}
+
+.block1 .middle .right form select,
+.block1 .middle .right form input {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    margin-bottom: 13px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.block1 .middle .right form .btn {
+    display: block;
+    width: 100%;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    bottom: -90px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54f2f9+0,18a1a7+100 */
+    background: rgb(84, 242, 249); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(84, 242, 249, 1) 0%, rgba(24, 161, 167, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(84, 242, 249, 1) 0%, rgba(24, 161, 167, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(84, 242, 249, 1) 0%, rgba(24, 161, 167, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54f2f9', endColorstr='#18a1a7', GradientType=0); /* IE6-9 */
+    border-bottom: 4px solid #0f6b6f;
+    border-radius: 10px;
+    z-index: 2;
+
+}
+
+.btn {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.block1 .middle .prod {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: 55%;
+}
+
+.block1 .bottom {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2c496+0,ccac7a+100 */
+    background: rgb(226, 196, 150); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(226, 196, 150, 1) 0%, rgba(204, 172, 122, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(226, 196, 150, 1) 0%, rgba(204, 172, 122, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(226, 196, 150, 1) 0%, rgba(204, 172, 122, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2c496', endColorstr='#ccac7a', GradientType=0); /* IE6-9 */
+    padding: 40px 0 25px;
+    text-align: right;
+}
+
+.block1 .bottom .pack {
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    padding-right: 103px;
+    letter-spacing: 1px;
+}
+
+.block1 .bottom .pack span {
+    padding: 3px 5px;
+    background: #937a54;
+    border-radius: 5px;
+}
+
+.block1 .bottom .pack:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #937a54;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.block2 {
+    background: #56f5fc;
+    padding: 20px 0 0;
+    font-size: 0;
+}
+
+.block2 .slider {
+    padding: 85px 0;
+}
+
+.block2 .left {
+    display: inline-block;
+    vertical-align: middle;
+    width: 56%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.block2 .left .img_cont {
+    max-width: 510px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+}
+
+.block2 .img_cont img {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    border-radius: 4px;
+}
+
+.block2 .right {
+    display: inline-block;
+    width: 44%;
+    font-size: 1rem;
+    padding-left: 75px;
+    color: #3e3e3e;
+    vertical-align: top;
+    padding-top: 130px;
+    text-align: left;
+}
+
+.block2 .right .comm {
+    font-size: 22px;
+    margin-bottom: 30px;
+    line-height: 33px;
+}
+
+.block2 .right .line {
+    width: 100%;
+    height: 1px;
+    background: #1f989d;
+    position: relative;
+    margin-bottom: 42px;
+}
+
+.block2 .right .line:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #1f989d;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.block2 .right .name {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.block2 .right .info {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.block2 .right .info span {
+    font-weight: bold;
+}
+
+.block2 .right .info.work {
+    margin-bottom: 17px;
+
+}
+
+.block2 .bottom {
+    font-size: 1rem;
+    padding: 27px 0;
+    width: 64%;
+
+}
+
+.block2 .bottom h1 {
+    font-size: 37px;
+    line-height: 47px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 56px 0 25px;
+    letter-spacing: 1px;
+    margin-bottom: 36px;
+    color: #303030;
+}
+
+.block2 .bottom h1 span {
+    display: block;
+}
+
+.block2 .bottom p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #303030;
+}
+
+.al_right {
+    text-align: right;
+    position: relative;
+}
+
+.block2 .bottom .prod {
+    margin: 60px 0 50px;
+    max-width: 558px;
+    width: 100%;
+    color: black;
+    position: relative;
+    right: 11px;
+    z-index: 1;
+}
+
+.block2 .bottom .symbol {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    left: 14px;
+    top: 88px;
+}
+
+.block2 .bottom .symbol h3 {
+    background: -webkit-linear-gradient(#dbbd90, #b6996c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.block2 .bottom .cup {
+    position: absolute;
+    top: 253px;
+    left: -78px;
+}
+
+.block2 .girl {
+    position: absolute;
+    right: -145px;
+    bottom: 0;
+}
+
+.block3 {
+    background: #ffffff;
+    padding: 60px 0 83px;
+}
+
+.block3 h1 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 49px;
+    color: #303030;
+    margin-bottom: 60px;
+}
+
+.block3 .list {
+    font-size: 0;
+    text-align: center;
+}
+
+.block3 .list li {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.block3 .list li .section {
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.block3 .list li .section img {
+    max-width: 301px;
+    width: 100%;
+}
+
+.block3 .list li .section .img_cont {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.block3 .list li .section .label {
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    text-shadow: 1px 1px 1px #000;
+    left: 50%;
+    bottom: 45px;
+    max-width: 205px;
+    width: 100%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    line-height: 27px;
+}
+
+.block3 .list li .section .label span {
+    font-size: 21px;
+}
+
+.block3 .list li .section p {
+    font-size: 17px;
+    line-height: 26px;
+    color: #303030;
+}
+
+.block4 {
+    background: url("../img/block4_bg.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 883px;
+    padding: 55px 0;
+}
+
+.block4 .limit {
+    max-width: 1138px;
+}
+
+.block4 .left {
+    max-width: 478px;
+    width: 100%;
+}
+
+.block4 .left h1 {
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 71px;
+    color: white;
+    margin-bottom: 70px;
+}
+
+.block4 .left h1 span {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.block4 .left .list {
+    background: white;
+    border-radius: 15px;
+    padding: 47px 5px;
+}
+
+.block4 .left .list li {
+    color: #343434;
+    margin-bottom: 36px;
+    position: relative;
+    min-height: 75px;
+    font-size: 0;
+}
+
+.block4 .left .list li:last-child {
+    margin-bottom: 0;
+}
+
+.block4 .left .list li .img_cont {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24%;
+    text-align: center;
+
+}
+
+.block4 .left .list li p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 76%;
+    font-size: 16px;
+    padding-right: 25px;
+
+}
+
+.block4 .cup {
+    position: absolute;
+    top: 245px;
+    left: 507px;
+    max-width: 415px;
+    width: 100%;
+}
+
+.block4 .prod {
+    top: 160px;
+    right: -319px;
+    position: absolute;
+}
+
+.block5 {
+    background: url("../img/block5_bg.png") no-repeat center;
+    background-size: cover;
+    min-height: 808px;
+    margin: -140px auto;
+    padding: 212px 0 120px;
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+
+.block5 .right {
+    max-width: 640px;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+.block5 .right h1 {
+    font-size: 36px;
+    line-height: 43px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.block5 .right .list {
+    padding-right: 60px;
+}
+
+.block5 .right .list li {
+    font-size: 18px;
+    color: white;
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.block5 .right .list li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    background: #58bccb;
+}
+
+.block5 .prod {
+   position: absolute;
+    left: -84px;
+    top: 0;
+    max-width: 645px;
+    width: 100%;
+}
+
+.block6 {
+    background: url("../img/block6_bg.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 935px;
+    padding: 100px 0 100px;
+    position: relative;
+}
+
+.block6 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #383837;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.block6 .sect {
+    max-width: 970px;
+    width: 100%;
+    background: white;
+    padding: 50px 20px 50px 50px;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-size: 0;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 2;
+}
+
+.block6 .sect .text {
+    display: inline-block;
+    width: 66%;
+    vertical-align: top;
+}
+
+.block6 .sect p {
+    font-size: 17px;
+    color: #353535;
+    line-height: 29px;
+    position: relative;
+    z-index: 1;
+}
+
+.block6 .sect p.label {
+    font-size: 20px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+    line-height: normal;
+}
+
+.block6 .sect .cup {
+    float: right;
+    max-width: 239px;
+    top: 10px;
+    left: 82px;
+    margin-left: -75px;
+    position: relative;
+}
+
+.block6 .sect .prod {
+    display: inline-block;
+    vertical-align: top;
+    width: 34%;
+}
+
+.block6 .sect .prod img {
+    width: 140%;
+    position: relative;
+    left: -10px;
+  top: 75px;
+}
+
+.block6 .cup2 {
+    position: absolute;
+    bottom: -120px;
+    left: -320px;
+}
+
+.block6 .meter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.block6 .photo {
+    position: absolute;
+    right: -265px;
+    top: 202px;
+}
+
+.block7 {
+    padding: 190px 0 0px;
+}
+
+.block7 h1 {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: bold;
+    color: #383837;
+    width: 60%;
+    text-transform: uppercase;
+    margin-bottom: 280px;
+    position: relative;
+    z-index: 1;
+}
+
+.block7 h1 span {
+    display: block;
+}
+
+.block7 .list {
+    text-align: center;
+    font-size: 0;
+    position: relative;
+}
+
+.block7 .list .arrow {
+    position: absolute;
+    max-width: 866px;
+    width: 100%;
+    left: -6px;
+    top: -453px;
+
+}
+
+.block7 .list li {
+    width: 20%;
+    font-size: 17px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+
+}
+
+.block7 .list li .days {
+    display: block;
+    width: 177px;
+    height: 177px;
+    text-align: center;
+    line-height: 177px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+
+}
+
+.block7 .list li p {
+    padding: 0 10px;
+    color: #2d2d2d;
+    line-height: 27px;
+}
+
+.block7 .list li:nth-of-type(2) {
+    bottom: 50px;
+}
+
+.block7 .list li:nth-of-type(3) {
+    bottom: 140px;
+}
+
+.block7 .list li:nth-of-type(4) {
+    bottom: 270px;
+}
+
+.block7 .list li:nth-of-type(5) {
+    bottom: 430px;
+}
+
+.block7 .list li:nth-of-type(1) .days {
+    background: #4cb2c9;
+}
+
+.block7 .list li:nth-of-type(2) .days {
+    background: #43abc2;
+}
+
+.block7 .list li:nth-of-type(3) .days {
+    background: #37a1b9;
+}
+
+.block7 .list li:nth-of-type(4) .days {
+    background: #2a97af;
+}
+
+.block7 .list li:nth-of-type(5) .days {
+    background: #1e8ca5;
+}
+
+.block7 .list .weight {
+    position: absolute;
+    right: -104px;
+    bottom: 18px;
+}
+
+.block8 {
+    padding: 0 0 20px;
+}
+
+.block8 h1 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #383837;
+    line-height: 31px;
+    text-transform: uppercase;
+    max-width: 770px;
+    margin: 0 auto 65px;
+}
+
+.block8 .list {
+    text-align: center;
+    font-size: 0;
+}
+
+.block8 .list li {
+    display: inline-block;
+    width: 23%;
+    max-width: 205px;
+    margin-right: 2%;
+    font-size: 14px;
+    vertical-align: top;
+    color: #595959;
+
+}
+
+.block8 .list li img {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.block8 .list li:last-child {
+    margin-right: 0;
+}
+
+.block9 {
+    padding: 25px 0 90px;
+    border-bottom: 5px solid #1d7a99;
+    position: relative;
+    min-height: 655px;
+}
+
+.block9 h1 {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    max-width: 770px;
+    margin: 0 auto 50px;
+    text-transform: uppercase;
+    color: #383837;
+}
+
+.block9 .list {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.block9 .list li {
+    padding: 4px 20px;
+    background: #36a3bb;
+    margin-bottom: 15px;
+    display: block;
+    color: white;
+}
+
+.block9 .list li:nth-of-type(1) {
+    width: 91%;
+}
+
+.block9 .list li:nth-of-type(2) {
+    width: 99%;
+}
+
+.block9 .list li:nth-of-type(3) {
+    width: 100%;
+}
+
+.block9 .list li:nth-of-type(4) {
+    width: 97%;
+}
+
+.block9 .list li:nth-of-type(5) {
+    width: 94%;
+}
+
+.block9 .list li p {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 700px;
+    width: 85%;
+
+}
+
+.block9 .list li span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 38px;
+    font-weight: bold;
+    width: 13%;
+}
+
+.block9 .meter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.block10 {
+    padding: 0 0 75px;
+    position: relative;
+}
+
+.block10 .mark {
+    max-width: 200px;
+    width: 100%;
+    padding: 15px 25px;
+    background: white;
+    font-size: 0;
+    margin: -85px auto 40px;
+}
+
+.block10 .mark .left,
+.block10 .mark .right {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.block10 .mark .left {
+}
+
+.block10 .mark .right {
+    padding-left: 5px;
+}
+
+.block10 .mark .left p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    font-size: 16px;
+    color: #1d7a99;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.block10 .mark .left .img_cont {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.block10 .mark .left .img_cont img {
+    max-width: 140px;
+}
+
+.block10 .mark .right p {
+    color: black;
+    font-size: 16px;
+}
+
+.block10 .mark .right .color {
+    color: #1d7a99;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.block10 h1 {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: bold;
+    color: #383837;
+    margin-bottom: 62px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.block10 .slider {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    max-width: 1060px;
+    width: 100%;
+}
+
+.block10 .slider .item {
+    border: 1px solid #36a3bb;
+    font-size: 0;
+    padding: 85px 50px;
+}
+
+.block10 .slider .item .left {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    padding: 0 10px;
+}
+
+.block10 .slider .item .left img {
+    width: 100%;
+    max-width: 340px;
+}
+
+.block10 .slider .item .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    font-size: 17px;
+    color: #3f3f3f;
+    padding: 0 10px;
+    position: relative;
+    text-align: left;
+}
+
+.block10 .slider .item .label {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    padding-top: 25px;
+    padding-right: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.block10 .slider .item .label:before {
+    content: '';
+    background: url("../img/quote.png") no-repeat;
+    width: 49px;
+    height: 39px;
+    position: absolute;
+    left: 2px;
+    top: -25px;
+}
+
+.block10 .slider .item .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.block10 .slider .item .name span {
+    color: #36a3bb;
+}
+
+.block10 .slider .item .line {
+    width: 100%;
+    height: 1px;
+    background: #1f989d;
+    position: relative;
+    margin-bottom: 37px;
+}
+
+.block10 .slider .item .line:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #1f989d;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.block10 .slider .item .text {
+    line-height: 27px;
+}
+
+.block10 .slider .bottom {
+    margin-top: 70px;
+}
+
+.block10 .slider .bottom .list li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.block10 .slider .bottom .list li img {
+    max-width: 280px;
+    width: 100%;
+}
+
+.block10 .slider .slick-prev {
+    background: url("../img/prev.jpg") no-repeat;
+    width: 61px;
+    height: 61px;
+    left: -28px;
+    top: 115px;
+    z-index: 1;
+}
+
+.block10 .slider .slick-next {
+    background: url("../img/next.jpg") no-repeat;
+    width: 61px;
+    height: 61px;
+    right: -28px;
+    top: 115px;
+    z-index: 1;
+}
+
+.block11 {
+    background: url("../img/block11_bg.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 598px;
+    padding: 48px 0;
+}
+
+.block11 .limit {
+    max-width: 1266px;
+}
+
+.block11 h1 {
+    font-size: 33px;
+    margin-bottom: 57px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.block11 .list {
+    text-align: center;
+}
+
+.block11 .list li {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    position: relative;
+}
+
+.block11 .list li:before {
+    content: '';
+    background: url("../img/block11_arrow.png") no-repeat;
+    width: 38px;
+    height: 37px;
+    position: absolute;
+    right: -29px;
+    top: 120px;
+}
+
+.block11 .list li:last-child:before {
+    display: none;
+}
+
+.block11 .list li img {
+    width: 265px;
+    height: 265px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto 13px;
+}
+
+.block11 .list li p {
+    max-width: 250px;
+    color: white;
+    font-size: 19px;
+    line-height: 27px;
+    margin: 0 auto;
+}
+
+.block12 .bg_cont {
+    background: url("../img/block12_bg.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 828px;
+    padding: 37px 0 0;
+    font-size: 0;
+
+}
+
+.block12 h1 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: #434343;
+    max-width: 876px;
+    line-height: 41px;
+    margin: 0 auto 2px;
+}
+
+.block12 h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 39px;
+    margin-bottom: 20px;
+}
+
+.block12 .left,
+.block12 .right {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    position: relative;
+}
+
+.block12 .left {
+    text-align: right;
+    padding-top: 68px;
+}
+
+.block12 .left .prod {
+    max-width: 502px;
+    width: 100%;
+    position: relative;
+    left: 75px;
+}
+
+.block12 .left .sect {
+    position: absolute;
+    max-width: 300px;
+    text-align: center;
+    left: -98px;
+    top: 23px;
+}
+
+.block12 .left .sect .symbol {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.block12 .left .sect h2 {
+    background: -webkit-linear-gradient(#dbbd90, #b6996c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 22px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.block12 .left .sect .sale {
+    font-size: 22px;
+    color: #393939;
+    font-weight: bold;
+}
+
+.block12 .left .sect .sale span {
+    font-size: 32px;
+}
+
+.block12 .left .sect .price {
+    text-align: center;
+}
+
+.block12 .left .sect .price span {
+    display: table;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.block12 .left .sect .price .old {
+    font-size: 20px;
+    color: #393939;
+    position: relative;
+}
+
+.block12 .left .sect .price .old:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: red;
+
+}
+
+.block12 .left .sect .price .new {
+    font-size: 34px;
+    color: #36a3bb;
+}
+
+.block12 .left .cup {
+    position: absolute;
+    top: 361px;
+    left: -78px;
+    max-width: 323px;
+}
+
+.block12 .right {
+    color: #434343;
+    padding-top: 12px;
+    padding-left: 7px;
+    position: relative;
+}
+
+.block12 .right h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+    position: relative;
+    right: 25px;
+}
+
+.block12 .right form {
+    background: url("../img/form_bg.png") no-repeat;
+    width: 291px;
+    height: 319px;
+    background-size: contain;
+    padding: 35px 15px;
+    margin-top: 18px;
+    margin-bottom: 65px;
+    position: relative;
+
+}
+
+.block12 .right form select,
+.block12 .right form input {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    margin-bottom: 13px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.block12 .right form .btn {
+    display: block;
+    width: 100%;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    bottom: -90px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54f2f9+0,18a1a7+100 */
+    background: rgb(84, 242, 249); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(84, 242, 249, 1) 0%, rgba(24, 161, 167, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(84, 242, 249, 1) 0%, rgba(24, 161, 167, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(84, 242, 249, 1) 0%, rgba(24, 161, 167, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54f2f9', endColorstr='#18a1a7', GradientType=0); /* IE6-9 */
+    border-bottom: 4px solid #0f6b6f;
+    border-radius: 10px;
+    z-index: 22;
+
+}
+
+.block12 .right .limit {
+    max-width: 350px;
+    margin: 0;
+}
+
+.block12 .right .list {
+    margin-bottom: 37px;
+}
+
+.block12 .right .list li {
+    margin-bottom: 5px;
+    font-size: 17px;
+    position: relative;
+}
+
+.block12 .right .list li:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #36a3bb;
+    position: absolute;
+    left: -23px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.block12 .right .girl {
+    position: absolute;
+    right: -190px;
+    bottom: -50px;
+}
+
+.block12 .bottom {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2c496+0,ccac7a+100 */
+    background: rgb(226, 196, 150); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(226, 196, 150, 1) 0%, rgba(204, 172, 122, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(226, 196, 150, 1) 0%, rgba(204, 172, 122, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(226, 196, 150, 1) 0%, rgba(204, 172, 122, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2c496', endColorstr='#ccac7a', GradientType=0); /* IE6-9 */
+    padding: 23px 0;
+    font-size: 0;
+    position: relative;
+    z-index: 11;
+}
+
+.block12 .bottom .left,
+.block12 .bottom .right {
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.block12 .bottom .left .list li {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    position: relative;
+    padding-left: 50px;
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.block12 .bottom .left .list li:nth-of-type(1):before {
+    content: '';
+    background: url("../img/block12_item1.png") no-repeat;
+    width: 44px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.block12 .bottom .left .list li:nth-of-type(2):before {
+    content: '';
+    background: url("../img/block12_item2.png") no-repeat;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.block12 .bottom .pack {
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.block12 .bottom .pack span {
+    padding: 3px 5px;
+    background: #937a54;
+    border-radius: 5px;
+}
+
+.block12 .bottom .pack:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #937a54;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+footer {
+    display: block;
+    background: white;
+    text-align: center;
+    padding: 20px 0;
+    color: #414141;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 1435px) {
+    .block12 .left .sect {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .block12 .left .sect h2 {
+        margin-bottom: 0;
+    }
+
+    .block12 .left .prod {
+        left: 0;
+    }
+
+    .block12 .left {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .block10 .slider .slick-next {
+        right: 0;
+    }
+
+    .block10 .slider .slick-prev {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .block4 .prod {
+        right: -110px;
+    }
+
+    .block4 .cup {
+        display: none;
+    }
+
+    .block2 .right {
+        padding-left: 30px;
+    }
+
+    .block5 .prod {
+        left: -50px;
+        top: 0;
+        max-width: 400px;
+    }
+
+    .block1 .top .list li {
+        padding-right: 30px;
+    }
+
+    .block2 .bottom .prod {
+        right: -40px;
+    }
+
+    .block9 .meter {
+        display: none;
+    }
+
+    .block7 .list .weight {
+        right: -150px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .limit {
+        max-width: 480px;
+    }
+
+    .block {
+        min-height: 0;
+    }
+
+    .block1 .bg_cont {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#303030+0,464646+50,303030+100 */
+        background: rgb(48, 48, 48); /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(48, 48, 48, 1) 0%, rgba(70, 70, 70, 1) 50%, rgba(48, 48, 48, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(48, 48, 48, 1) 0%, rgba(70, 70, 70, 1) 50%, rgba(48, 48, 48, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(48, 48, 48, 1) 0%, rgba(70, 70, 70, 1) 50%, rgba(48, 48, 48, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#303030', endColorstr='#303030', GradientType=1); /* IE6-9 */
+    }
+
+    .block1 .top {
+        display: none;
+    }
+
+    .block1 .middle .left {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .block1 .middle .prod {
+        position: static;
+        display: block;
+        width: 100%;
+        margin: 20px auto 0;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+       /* max-width: 300px;*/
+    }
+
+    .block1 .middle .right {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .block1 .middle .left .sect {
+        margin: 0 auto;
+    }
+
+    .block1 .middle .left .list {
+        margin: 20px auto;
+    }
+
+    .block1 .middle .right form {
+        margin: 0 auto;
+        height: 350px;
+    }
+
+    .block1 .middle .right h2 {
+        margin-bottom: 0;
+    }
+
+    .block1 .middle .right form .btn {
+        bottom: -20px;
+    }
+
+    .block1 .bottom {
+        text-align: center;
+    }
+
+    .block1 .bottom .pack {
+        padding: 0;
+    }
+
+    .block2 .left {
+        display: block;
+        width: 100%;
+    }
+
+    .block2 .right {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .block2 .slick-dots {
+        position: static;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .block2 .slider {
+        padding: 10px 0;
+    }
+
+    .block2 .girl {
+        display: none;
+    }
+
+    .block2 .bottom {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .block2 .left .img_cont {
+        padding: 0 30px;
+    }
+
+    .block2 .slick-next {
+        right: 0;
+        top: 270px;
+    }
+    .block2 .slick-prev {
+        left: 0;
+        top: 270px;
+    }
+
+    .block2 .bottom .cup {
+        display: none;
+    }
+
+    .block2 .bottom .symbol {
+        display: none;
+    }
+
+    .block2 .bottom .prod {
+       /* max-width: 300px;*/
+        width: 100%;
+        margin: 20px auto;
+        right: 0;
+        display: block;
+    }
+
+    .block3 {
+        padding: 20px 0;
+    }
+
+    .block3 h1 {
+        margin-bottom: 20px;
+    }
+
+    .block3 .list li {
+        display: block;
+        width: 100%;
+    }
+
+    .block4 .prod {
+        display: none;
+    }
+
+    .block4 .left {
+        margin: 0 auto;
+    }
+
+    .block4 {
+        padding: 20px 0;
+    }
+
+    .block4 .left h1 {
+        margin-bottom: 20px;
+    }
+
+    .block5 {
+        margin: 0 auto;
+        padding: 20px 0;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#303030+0,464646+50,303030+100 */
+        background: rgb(48, 48, 48); /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(48, 48, 48, 1) 0%, rgba(70, 70, 70, 1) 50%, rgba(48, 48, 48, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(48, 48, 48, 1) 0%, rgba(70, 70, 70, 1) 50%, rgba(48, 48, 48, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(48, 48, 48, 1) 0%, rgba(70, 70, 70, 1) 50%, rgba(48, 48, 48, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#303030', endColorstr='#303030', GradientType=1); /* IE6-9 */
+    }
+
+    .block5 .prod {
+        position: static;
+        /*max-width: 300px;*/
+        width: 100%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .block6 {
+        padding: 20px 0;
+    }
+
+    .block6 .photo {
+        display: none;
+    }
+
+    .block6 .meter {
+        display: none;
+    }
+
+    .block6 .cup2 {
+        display: none;
+    }
+
+    .block6 .sect .cup {
+        display: none;
+    }
+
+    .block6 .sect .text {
+        display: block;
+        width: 100%;
+    }
+
+    .block6 .sect .prod {
+        display: block;
+        width: 100%;
+    }
+
+    .block6 .sect .prod img {
+        width: 100%;
+       /* max-width: 300px;*/
+        left: 0;
+        margin: 10px auto;
+      top: 0
+    }
+
+    .block6 h1 {
+        margin-bottom: 20px;
+    }
+
+    .block7 {
+        padding: 20px 0;
+    }
+
+    .block7 h1 {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .block7 .list li {
+        display: block;
+        width: 100%;
+        margin: 15px auto;
+        bottom: 0 !important;
+    }
+
+    .block7 .list .weight {
+        display: none;
+    }
+
+    .block7 .list li p {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .block7 h1 {
+        text-align: center;
+    }
+
+    .block7 .list .arrow {
+        display: none;
+    }
+
+    .block8 .list li {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .block8 h1 {
+        margin-bottom: 20px;
+    }
+
+    .block9 {
+        padding: 20px 0;
+    }
+
+    .block9 h1 {
+        margin-bottom: 20px;
+    }
+
+    .block9 .list li p {
+        width: 75%;
+    }
+
+    .block10 .mark {
+        display: none;
+    }
+
+    .block10 {
+        padding: 20px 0;
+    }
+
+    .block10 h1 {
+        margin-bottom: 20px;
+    }
+
+    .block10 .slider .bottom {
+        display: none;
+    }
+
+    .block10 .slider .item {
+        padding: 10px;
+    }
+
+    .block10 .slider .item .left {
+        display: block;
+        width: 100%;
+    }
+
+    .block10 .slider .item .right {
+        display: block;
+        width: 100%;
+    }
+
+    .block10 .slider .item .label:before {
+        display: none;
+    }
+
+    .block10 .slider .item .left img {
+        display: block;
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    .block11 {
+        padding: 20px 0;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#303030+0,464646+50,303030+100 */
+        background: rgb(48, 48, 48); /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(48, 48, 48, 1) 0%, rgba(70, 70, 70, 1) 50%, rgba(48, 48, 48, 1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(48, 48, 48, 1) 0%, rgba(70, 70, 70, 1) 50%, rgba(48, 48, 48, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(48, 48, 48, 1) 0%, rgba(70, 70, 70, 1) 50%, rgba(48, 48, 48, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#303030', endColorstr='#303030', GradientType=1); /* IE6-9 */
+    }
+
+    .block11 .list li:before {
+        display: none;
+    }
+
+    .block11 .list li {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .block11 h1 {
+        margin-bottom: 20px;
+    }
+
+    .block11 .list li img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .block12 .bg_cont {
+        padding: 20px 0;
+    }
+
+    .block12 .left .cup {
+        display: none;
+    }
+
+    .block12 .right .girl {
+        display: none;
+    }
+
+    .block12 .left {
+        display: block;
+        width: 100%;
+    }
+
+    .block12 .left .prod {
+        /*max-width: 300px;*/
+         margin: 20px auto 0;
+    display: block;
+    }
+
+    .block12 .right {
+        display: block;
+        width: 100%;
+    }
+
+    .block12 .right .limit {
+        max-width: 100%;
+    }
+
+    .block12 .right h2 {
+        right: 0;
+    }
+
+    .block12 .right .list {
+        padding-left: 37px;
+        margin-bottom: 20px;
+    }
+
+    .block12 .right form {
+        margin: 20px auto;
+    }
+
+    .block12 .right form .btn {
+        bottom: -20px;
+    }
+
+    .block12 .bottom .left {
+        display: none;
+    }
+
+    .block12 .bottom .right {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .block1 .middle .left h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .limit {
+        padding: 0 5px;
+    }
+    .block1 .middle .left h2 span,
+    .block1 .middle .left h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .block1 .middle .left .list li {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .block1 .middle .left .sect {
+        font-size: 18px;
+    }
+    .block1 .bottom .pack {
+        font-size: 15px;
+    }
+    .block2 .right .comm {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block2 .right .name {
+        font-size: 18px;
+    }
+    .block2 .right .info.work {
+        font-size: 16px;
+    }
+    .block2 .right .info {
+        font-size: 16px;
+    }
+    .block2 .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+    .block2 .bottom h1 {
+        font-size: 24px;
+        line-height: normal;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .block2 .bottom p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block3 h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .block3 .list li .section img {
+        max-width: 150px;
+    }
+    .block3 .list li .section .label {
+        font-size: 12px;
+        line-height: normal;
+        padding: 0 35px;
+    }
+    .block3 .list li .section .label span {
+        font-size: 12px;
+        display: block;
+    }
+    .block3 .list li .section p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block3 .list li .section .img_cont {
+        margin-bottom: 5px;
+    }
+    .block4 .left h1 span {
+        font-size: 24px;
+        display: block;
+    }
+
+    .block4 .left h1{
+        font-size: 30px;
+        line-height: normal;
+    }
+    .block4 .left .list li p {
+        padding: 0 8px;
+        font-size: 15px;
+        line-height: 19px;
+
+    }
+    .block5 .right h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .block5 .right .list {
+        padding: 0;
+    }
+    .block5 .right .list li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block6 h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .block6 .sect {
+        padding: 10px;
+    }
+    .block6 .sect p.label {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .block6 .sect p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block7 h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .block7 .list li .days {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 18px;
+    }
+    .block7 .list li p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block8 h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .block8 .list li {
+        display: block;
+        width: 100%;
+        margin: 0 auto 15px;
+    }
+    .block8 .list li:last-child {
+        margin: 0 auto 15px;
+    }
+    .block9 h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .block9 .list li span {
+        font-size: 18px;
+    }
+    .block9 .list li p {
+        font-size: 14px;
+    }
+    .block9 .list li p {
+        width: 85%;
+        padding-right: 10px;
+    }
+    .block10 h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .block10 .slider .item .label {
+        padding: 0;
+        font-size: 18px;
+        margin: 10px auto;
+    }
+    .block10 .slider .item .name {
+        font-size: 16px;
+    }
+    .block10 .slider .item .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block10 .slider .item {
+        margin-bottom: 15px;
+    }
+    .block11 h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .block11 .list li p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block11 .list li img {
+        margin-bottom: 5px;
+    }
+    .block12 h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+    .block12 h2 {
+        font-size: 18px;
+        line-height: normal;
+    }
+    .block12 .right h2 {
+        font-size: 18px;
+        line-height: normal;
+    }
+    .block12 .right .list li {
+        font-size: 16px;
+        line-height: normal;
+    }
+    .block1 .bottom .pack:before {
+        display: none;
+    }
+    .block12 .right .limit {
+        padding: 0;
+    }
+    .block12 .bottom .pack:before {
+        display: none;
+    }
+    .block12 .bottom .pack {
+        font-size: 15px;
+    }
+}
+.nds {
+	font-size: 12px;
+    color: #fff;
+}
+.nds_bottom {
+	font-size: 12px;
+    color: #000;
+}
+.footer {
+    text-align: center;
+    padding: 35px 5px 0;
+    font-size: 14px;
+}
