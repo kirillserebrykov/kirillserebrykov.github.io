@@ -360,7 +360,7 @@ span {
     left: 16%;
   }
   .logo__nav.active nav ul li a {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     text-align: center;
   }
   .logo__nav.active .Hello {
