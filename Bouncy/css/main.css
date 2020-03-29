@@ -141,7 +141,7 @@ span {
   font-size: 25px;
   font-weight: 400;
   line-height: 12px;
-  position: relative;
+  position: absolute;
   top: 30px;
   left: 90px;
 }
@@ -157,7 +157,7 @@ span {
 .welocome {
   text-align: center;
   position: relative;
-  top: 36vh;
+  top: 230px;
 }
 .welocome h1 {
   /* Style for "We Are Cod" */
@@ -306,9 +306,6 @@ span {
   .logo .logo__nav nav ul li a {
     font-size: 15px;
   }
-  .logo .Hello {
-    padding-left: px;
-  }
 }
 @media screen and (max-width: 1000px) {
   .burger .burger_line:before,
@@ -322,7 +319,7 @@ span {
 
   .burger .burger_line {
     position: absolute;
-    top: 53px;
+    top: 46px;
     right: 10vw;
   }
 
@@ -341,11 +338,6 @@ span {
     top: 0;
   }
 
-  #link, .Hello {
-    position: relative;
-    z-index: 5;
-  }
-
   .logo__nav {
     display: none;
   }
@@ -362,12 +354,55 @@ span {
     display: flex;
     flex-direction: column;
     white-space: pre-wrap;
+    position: relative;
+    left: 16%;
   }
   .logo__nav.active nav ul li a {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     text-align: center;
   }
   .logo__nav.active .Hello {
-    margin-right: 90px;
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .background {
+    width: 138%;
+  }
+
+  .burger .burger_line {
+    position: absolute;
+    top: 53px;
+    right: -130px;
+  }
+
+  .welocome h1 {
+    font-size: 30px;
+  }
+  .welocome p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .background {
+    width: 190%;
+  }
+
+  .logo__nav.active {
+    display: block;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-wrap;
+    position: relative;
+    top: 50px;
+    left: 70%;
+  }
+
+  .burger .burger_line {
+    position: absolute;
+    top: 53px;
   }
 }
