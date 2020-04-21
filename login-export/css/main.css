@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://use.typekit.net/wkp3tbp.css");
+@import url("https://use.typekit.net/wkp3tbp.css");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*  Обнуление */
+/* Шрифт */
+body {
+  background: url(../img/Warstwa_3.jpg) 24% 0/140% auto no-repeat local;
+  height: 2002px;
+  width: 100%;
+  font-family: Raleway sans-serif;
+}
+
+.content {
+  max-width: 1200px;
+  height: 2000px;
+  position: absolute;
+  left: 51%;
+  top: 0px;
+  transform: translate(-50%, 100px);
+}
+
+.trevel {
+  background: url(../img/Prostokąt_3.png) 0 0 no-repeat;
+  /* Style for "Prostokąt" */
+  width: 100%;
+  height: 481px;
+}
+.trevel .trevel_text {
+  min-width: 500px;
+  text-align: center;
+  transform: translate(0px, 70px);
+}
+.trevel .trevel_text span {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  padding-bottom: 60px;
+}
+.trevel .trevel_text span::before {
+  content: " ";
+  position: absolute;
+  /* Style for "Prostokąt" */
+  width: 91px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 14%;
+  transform: translate(-50%, 0px);
+}
+.trevel .trevel_text h1 {
+  /* Style for "Travel" */
+  width: 560px;
+  height: 144px;
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  color: #fff;
+  transform: translate(35%, 0px);
+  font-size: 145px;
+  font-weight: 400;
+  line-height: 115.75px;
+}
+.trevel p {
+  color: #ad7835;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.about {
+  display: flex;
+  /* Style for "Prostokąt" */
+  width: 1016px;
+  height: 444px;
+  box-shadow: 0 0 80px rgba(43, 43, 43, 0.3);
+  background-color: #373737;
+  position: relative;
+  top: 300px;
+  right: 10px;
+  overflow: hidden;
+}
+.about .about_content {
+  padding-left: 60px;
+  padding-top: 40px;
+}
+.about .about_content h2 {
+  /* Style for "About me" */
+  width: 300px;
+  color: #ad7835;
+  font-family: droid-serif, serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 81.29px;
+  /* Text style for "A" */
+  padding-left: 3px;
+  padding-bottom: 30px;
+}
+.about .about_content h2::before {
+  content: " ";
+  position: absolute;
+  /* Style for "Prostokąt" */
+  width: 91px;
+  height: 3px;
+  margin-left: 0px;
+  margin-top: 82px;
+  background-color: #ad7835;
+}
+.about .about_content p {
+  /* Style for "Lorem ipsu" */
+  width: 468px;
+  height: 212px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.about .about_content a button {
+  width: 150px;
+  height: 46px;
+  background: none;
+  border: 1px solid #ad7835;
+}
+.about .about_content a button span {
+  /* Style for "READ MORE" */
+  color: #ad7835;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.about .about_content img {
+  display: flex;
+  justify-content: flex-end;
+  transform: translate(103%, -84%);
+  width: 460px;
+  height: 540px;
+}
+
+@media screen and (max-width: 1490px) {
+  .content {
+    top: 28px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .content {
+    margin-top: 4vh;
+    margin-left: 30px;
+  }
+  .content .about {
+    width: 1116px;
+    height: 460px;
+  }
+  .content .about img {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 500px;
+    height: 550px;
+  }
+  .content .about a button {
+    transform: translate(0px, 30px);
+  }
+}
+@media screen and (max-width: 1380px) {
+  .content {
+    top: 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .content .trevel {
+    background: none;
+  }
+}
+@media screen and (max-width: 1097px) {
+  .content {
+    max-width: 5000px;
+  }
+  .content .trevel .trevel_text {
+    position: relative;
+    bottom: 50px;
+  }
+  .content .trevel .trevel_text span {
+    font-size: 20px;
+  }
+  .content .trevel .trevel_text span::before {
+    content: " ";
+    position: absolute;
+    width: 60px;
+    transform: translate(-50%, -10px);
+  }
+  .content .trevel .trevel_text h1 {
+    font-size: 120px;
+    transform: translate(20%, 0px);
+  }
+  .content .trevel .trevel_text p {
+    font-size: 20px;
+  }
+  .content .about {
+    width: 790px;
+    height: 360px;
+    position: relative;
+    left: 0%;
+  }
+  .content .about .about_content {
+    position: relative;
+    bottom: 20px;
+  }
+  .content .about .about_content h2 {
+    font-size: 3em;
+  }
+  .content .about .about_content h2:before {
+    content: " ";
+    position: absolute;
+    transform: translate(0px, -19px);
+  }
+  .content .about .about_content p {
+    font-size: 12px;
+    transform: translate(0px, -12px);
+  }
+  .content .about .about_content a button {
+    width: 120px;
+    height: 30px;
+    position: relative;
+    bottom: 35px;
+  }
+  .content .about .about_content a button span {
+    font-size: 12px;
+  }
+  .content .about .about_content img {
+    width: 336px;
+    height: 389px;
+    position: relative;
+    left: 15px;
+    bottom: 60px;
+  }
+  .content .about .trevel {
+    background: url(../img/Prostokąt_3.png) 0 0 no-repeat;
+    /* Style for "Prostokąt" */
+  }
+  .content .about .trevel .trevel {
+    width: 400px;
+    height: 471px;
+  }
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    margin-right: 210px;
+  }
+
+  .content .about {
+    margin-left: 20%;
+    padding-left: 60px;
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    height: 760px;
+    position: absolute;
+    top: 600px;
+  }
+  .content .about .about_content img {
+    transform: translate(-15px, 40px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .content {
+    max-width: 700px;
+    margin-left: 0px;
+    overflow: hidden;
+  }
+  .content .trevel {
+    /* Style for "Prostokąt" */
+    width: 600px;
+    height: 471px;
+  }
+  .content h1 {
+    padding-right: 160px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .content {
+    max-width: 124%;
+    overflow: hidden;
+    margin-left: -30px;
+  }
+  .content .about .about_content p {
+    padding-right: 20px;
+  }
+
+  .content .trevel .trevel_text h1 {
+    font-size: 100px;
+    padding-right: -120px;
+  }
+
+  .content .trevel .trevel_text p {
+    font-size: 20px;
+    width: 400px;
+    margin-left: 110px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .content {
+    transform: translate(-280px, 70px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .content {
+    transform: translate(-280px, 70px);
+  }
+}
