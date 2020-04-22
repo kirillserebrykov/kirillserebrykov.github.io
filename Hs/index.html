@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <button onclick="  square()">
+        	<span>нарисовать квадрат</span> 
+        </button>
+
+        <button onclick="triangle()">
+        	 <span>нарисовать треугольник</span> 
+        </button>
+
+        <button onclick="circle()">
+        	<span>нарисовать круг</span> 
+        </button>
+ <button onclick="cleer()">
+        	 <p>очистить</p> 
+        </button>
+
+      <div class="beta"><span>BETA</span></div>
+<canvas id="graph"   width="500"   height="500"></canvas>
+<script>
+   var canvas = document.getElementById('graph');
+   var ctx = canvas.getContext('2d');
+   function square() {
+   	ctx.beginPath();
+ctx.moveTo(150, 150);
+ctx.lineTo(300, 150); // линия вправо
+ctx.lineTo(300, 300); // линия вниз
+ctx.lineTo(150, 300); // линия влево
+ctx.closePath(); // смыкание начала и конца рисунка (левая стена)
+ctx.strokeStyle = '#1a2edb'; // тёмно-синий цвет
+ctx.lineWidth = 5; // толщина линии в 5px
+ctx.stroke();
+
+   }
+    function triangle() {
+   	ctx.beginPath();
+ctx.moveTo(230, 150);
+ctx.lineTo(230, 150); // линия вправо
+ctx.lineTo(300, 300); // линия вниз
+ctx.lineTo(150, 300); // линия влево
+ctx.closePath(); // смыкание начала и конца рисунка (левая стена)
+ctx.strokeStyle = '#1a2edb'; // тёмно-синий цвет
+ctx.lineWidth = 5; // толщина линии в 5px
+ctx.stroke();
+
+
+   }
+    function circle() {
+  ctx.beginPath();
+ctx.arc(230, 230, 50, 0, Math.PI*2);
+ctx.strokeStyle = '#1a2edb'; // тёмно-синий цвет
+ctx.lineWidth = 5; // толщина линии в 5px
+ctx.stroke();
+
+
+   }
+   
+
+function cleer() {
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+   
+</script>
+      
+
+</body>
+</html>
